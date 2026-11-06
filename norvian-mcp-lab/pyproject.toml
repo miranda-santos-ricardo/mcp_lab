@@ -1,14 +1,17 @@
 [project]
 name = "norvian-mcp-lab"
 version = "0.1.0"
-description = "Add your description here"
+description = "MCP learning lab"
 readme = "README.md"
 authors = [
     { name = "Ricardo Santos", email = "miranda.santos.ricardo@gmail.com" }
 ]
 requires-python = ">=3.14"
 dependencies = [
-    "mcp[cli]>=2.3.0",
+    "jsonschema>=4,<5",
+    "mcp[cli]>2,<3",
+    "pydantic>2,<3",
+    "pytest>=9.2.0",
 ]
 
 [project.scripts]
