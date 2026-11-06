@@ -10,7 +10,7 @@ from pydantic import (
 class GetCustomerProfileInput(BaseModel):
     model_config = ConfigDict(extra="forbid")
     
-    customer_id: str | None = Field(
+    customer_id: str = Field(
         pattern="^CUST-[0-9]{3}$",
         description="Customer ID in the CUST-NNN format",
     )
@@ -27,7 +27,6 @@ test_cases = [
     ("EXTRA FIELD",{
         "customer_id": "CUST-001",
         "admin": True,
-        "Superuser":True
     }),
     ("NULL VALUE", {"customer_id": None})
 ]
