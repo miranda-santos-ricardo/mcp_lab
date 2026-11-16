@@ -1,9 +1,9 @@
 from mcp.server import MCPServer
 
 mcp = MCPServer(
-    "Norvian Risk Registry MCP Lab",
+    "AIEngineerLearningPath Registry MCP Lab",
     version="0.1.0",
-    description="A simple risk registry for tools in the Norvian MCP Lab.",
+    description="A simple risk registry for tools in the AI Engineer Learning Path MCP Lab.",
 )
 
 TOOLS_REGISTRY = {
