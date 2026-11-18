@@ -350,6 +350,11 @@ dependencies = [
     { name = "pytest" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "uvicorn" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "jsonschema", specifier = ">=4,<5" },
@@ -357,6 +362,9 @@ requires-dist = [
     { name = "pydantic", specifier = ">2,<3" },
     { name = "pytest", specifier = ">=9.2.0" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "uvicorn", specifier = ">=0.54.0" }]
 
 [[package]]
 name = "opentelemetry-api"
